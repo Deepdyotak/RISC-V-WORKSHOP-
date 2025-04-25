@@ -1,1 +1,20 @@
+vsduser@vsduser-VirtualBox:-$ cd
 
+vsduser@vsduser-VirtualBox:~$ cat sumiton
+
+cat: sumiton: No such file or directory vsduser@vsduser-VirtualBox:~$ cat sumiton.c
+
+#include <stdio.h>
+
+int main() {
+
+int i,sum=0,n=6; for(i = 1;i<=n;++i) {
+
+sum += 1;
+
+} printf("sum of the numbers is %d\n", sum);
+
+vsduser@vsduser-VirtualBox:~$ gcc sumiton.c
+
+vsduser@vsduser-VirtualBox:~$ ./a.out
+sum of the numbers is 21
