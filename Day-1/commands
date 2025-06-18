@@ -13,4 +13,14 @@ until pc 0 100b0  // this says until Program counter 100bo
 reg 0 a2
 // INSTRUCTIONS 
 lui - load upper immediate that means it will load the upper values of register bits[31:12] with the values assigned to them
-
+riscv64-unknown-elf-objdump -d sum1ton.o
+addi = add immediate 
+any 64 bit number is called "doubleword" in riscv lang
+32 bit number is word 
+2 32 bit = 64 bits number is doubleword
+1 bye = 8 bits
+64 bits = 8 bytes
+8 bits-> byte-> 4 bytes-> word->2 words or 8 bytes-> doubleword
+total patterns numbers(unsigned and positive numbers) we can represent using n bits is 0 - 2^(n-1)
+total unsigned and positive numbers that can be represented by rv64  system is o to  2^64 -1
+ 
