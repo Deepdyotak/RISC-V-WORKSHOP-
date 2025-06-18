@@ -3,5 +3,14 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ls -ltr sum1ton.o
 //To get the simulation results use the below command
 spike pk (ur file name)
-spike pk sum1ton.c
-  
+spike pk sum1ton.o
+
+// To debug a specific part use this 
+spike -d pk sum1ton.o
+//then u should type till which register u wanna check 
+until pc 0 100b0  // this says until Program counter 100bo
+//then which reg value
+reg 0 a2
+// INSTRUCTIONS 
+lui - load upper immediate that means it will load the upper values of register bits[31:12] with the values assigned to them
+
