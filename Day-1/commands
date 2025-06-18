@@ -1,0 +1,7 @@
+riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+ls -ltr sum1ton.o
+//To get the simulation results use the below command
+spike pk (ur file name)
+spike pk sum1ton.c
+  
